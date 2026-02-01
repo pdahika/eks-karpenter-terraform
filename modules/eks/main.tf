@@ -13,7 +13,7 @@ module "eks" {
   eks_managed_node_groups = {
     bootstrap = {
       ami_type       = "AL2_ARM_64"
-      instance_types = ["t4g.medium"]
+      instance_types = ["t2.medium"]
 
       min_size     = 1
       max_size     = 2
